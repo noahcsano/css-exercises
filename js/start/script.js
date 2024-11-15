@@ -30,29 +30,4 @@ function getHumanChoice(){
     }   
 }
 
-const container = document.querySelector('.container');
-const paragraph = document.createElement('p');
-paragraph.textContent = 'shit';
-paragraph.classList.add('paragraph');
-container.appendChild(paragraph);
 
-
-const newDiv = document.createElement('div');
-newDiv.classList.add('newDiv');
-newDiv.style.background = 'pink';
-newDiv.setAttribute("style", "background-color: pink; border: 2px solid black;");
-
-const h1 = document.createElement('h1');
-h1.textContent = 'Im in a div';
-newDiv.appendChild(h1);
-
-const p = document.createElement('p');
-p.textContent = 'Im also in a div';
-newDiv.appendChild(p);
-
-container.appendChild(newDiv);
-
-const btn = document.getElementById('btn');
-btn.addEventListener('click', function (e) {
-    e.target.style.background = "blue";
-});
